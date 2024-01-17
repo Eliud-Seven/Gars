@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="imagens/logo.png">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/carousel/">
+    <link rel ="stylesheet" href="JavaScript.js">
+    <script src="JavaScript.js"></script>
+    <script>let count = 1;
+      Document.getElementById("radio1").checked = true;
+
+      setInterval(function(){
+      nextImage();
+      }, 2000)
+
+      function nextImage(){
+      count++;
+      if(count>4){
+      count = 1;
+       }
+      document.getElementById("radio" +count).checked = true;
+      }       
+</script>
+
+    <!--<script type="text/javascript" src="JavaScript.js">
+        
+    </script>-->
+    <title>GARS</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel ="stylesheet" href="estilo.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<!---->
+   
+    <div class="navbar-wrapper">
+        <div class="container">
+  
+          <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">GARS</a>
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#galeria">Casa</a></li>
+                  <li><a href="informações.html">Info</a></li>
+                  <li><a href="contactos.html">Contactos</a></li>
+                
+                 <li class="dropdown">
+                    <a href="/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">arquivos <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="Galeria.html">GALERIA</a></li>
+                      <li><a href="#">ACÇÃO 1</a></li>
+                      <li><a href="#">ACÇÃO 1</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">ACÇÃO NOVA</li>
+                      <li><a href="#">ACÇÃO 1</a></li>
+                      <li><a href="/#">ACÇÃO 1</a></li>
+                    </ul>
+                  </li>
+            
+                </ul>
+              </div>
+            </div>
+          </nav>
+  
+        </div>
+        <div id="myCarousel" class="carousel slide " data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img class="first-slide" src="imagens/cc.jpg" alt="First slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1 class="txt-capa">GARS</h1>
+                  <h4>Angola</h4>
+                  <p>Conectando-se Em Segurança</p>
+                  <h3></h3>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Siga-nos Hoje</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="second-slide" src="imagens/spt.jpg" alt="Second slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1 class="h1">Estamos Cada Vez mais perto de ti</h1>
+                  <p>Criamos uma plataforma para ligar os cliente a GARS </p>
+                  <p><a class="btn btn-lg btn-primary" href="Informações.html" role="button">Saber +</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="third-slide" src="imagens/cpgf.jpg" alt="Third slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h3 class="h1">Serviços</h3>
+                  <p>Gerecenciamneto de redes: a Gars Angola oferece serviços de gerenciamento de redes de computadores, garantindo que todos os dispositivos estejam conectados e funcionando corretamente.</p>
+                  <p><a class="btn btn-lg btn-primary" href="Galeria.html" role="button">Galeria</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="https://getbootstrap.com/docs/3.4/examples/carousel/#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previsão</span>
+          </a>
+          <a class="right carousel-control" href="https://getbootstrap.com/docs/3.4/examples/carousel/#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Proximo</span>
+          </a>
+        </div><!-- /.carousel -->
+        <!-- Indicators -->
+        <!--
+        <div id="myCarousel" class="carousel slider" data-ride="carousel">
+         
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>GARS1</h1>
+              </div>
+            </div>
+            <div class="item ">
+              <img class="first-slide" src="imagens/representacao-da-experiencia-do-utilizador-e-design-da-interface.jpg" alt="First slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Example headline.</h1>
+                  <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                  <p><a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/3.4/examples/carousel/#" role="button">Sign up today</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <img class="second-slide" src="imagens/conceito-de-colagem-de-html-e-css-com-pessoa.jpg" alt="Second slide">
+              
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>GARS1</h1>
+                </div>
+              </div>
+
+            </div>
+            <div class="item active">
+              <img class="third-slide" src="imagens/homem-tiro-medio-usando-oculos-vr.jpg" alt="Third slide">
+              
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>GARS1</h1>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      -->
+
+          <div class="container">
+        <div class="container marketing">
+          
+      <!-- Three columns of text below the carousel -->
+        <div class="row" id="img-circle">
+        <div class="col-lg-4">
+          <img class="img-circle" src="imagens/ws19.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Windows Server 2019</h2>
+          <p>Instalação e configuração do windows server.</p>
+          <p><a class="btn btn-default" href="www.whatsapp.com" role="button">Contactar »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="imagens/office.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Pacote Office</h2>
+          <p>Intalação do pacote office 2007 (sem licença) 2010-2019 e o office 360.</p>
+          <p><a class="btn btn-default" href="/#" role="button">Detalhas »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="imagens/w10.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Wndows e Apps</h2>
+          <p>Instalação de sistema, e outros aplicativos</p>
+          <p><a class="btn btn-default" href="#" role="button">Detalhas »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+        </div>
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+      <h1 class="h1" id="galeria">SERVIÇÕES</h1>
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Serviços de Redes de Computadores. <span class="text-muted">Segurança.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p><a class="btn btn-default" href="www.whatsapp.com" target="_blank" role="button">Contactar »</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="imagens/homem-conectando-um-cabo-ethernet-a-um-roteador-sem-fio.jpg" data-holder-rendered="true">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Hardware e Software. <span class="text-muted">Veja-se em sintonia com o mundo.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p><a class="btn btn-default" href="www.whatsapp.com" target="_blank" role="button">Contactar »</a></p>
+        </div>
+
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="imagens/monitor-moderno-na-mesa-elegante.jpg" data-holder-rendered="true">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">A sua segurança em qualaquer lugar. <span class="text-muted">Clica.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p><a class="btn btn-default" href="www.whatsapp.com" target="_blank" role="button">Contactar »</a></p>
+          </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="imagens/roteador-wi-fi-de-angulo-alto-com-aspirador-de-po.jpg" data-holder-rendered="true">
+        </div>
+      </div>
+
+     
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer id="footer" class="footer navbar-wrapper">
+        <div class="col-md-4 link">
+          <p><a class="link" href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook.png"></a></p>
+          <p><a class="link" href="https://www.instagram.com//" target="_blank"><img src="imagens/instagram.png"></a></p>
+          <p><a class="link" href="https://www.whatsapp.com/download?lang=pt_br/" target="_blank"><img src="imagens/whatsapp.png"></a></p>
+          <p><a class="link" href="https://www.youtube.com/" target="_blank"><img src="imagens/youtube.png"></a></p>
+          <p><a class="link" href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&ifkv=ASKXGp3FxBO7VfPKdypuFZkes-1yjIeSFwkdpPHrIw_lGiFTJllbYsxcYwnWUifquvp2WM21bp4arw&theme=glif&flowName=GlifWebSignIn&flowEntry=ServiceLogin#inbox" target="_blank"><img src="imagens/gmail.png"></a></p>
+        </div>
+        <p class="pull-right home"><a class="link" href="GARS.html"><img src="imagens/casa.png"></a></p>
+          <p>© 2024 GARS, Lda. · <a href="https://getbootstrap.com/docs/3.4/examples/carousel/#">Termos e</a> · 
+          <a href="https://getbootstrap.com/docs/3.4/examples/carousel/#">Privacidade</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="JavaScript.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="imagens/logo.png">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/carousel/">
+    <link rel ="stylesheet" href="JavaScript.js">
+    <script src="JavaScript.js"></script>
+    <script>let count = 1;
+      Document.getElementById("radio1").checked = true;
+
+      setInterval(function(){
+      nextImage();
+      }, 2000)
+
+      function nextImage(){
+      count++;
+      if(count>4){
+      count = 1;
+       }
+      document.getElementById("radio" +count).checked = true;
+      }       
+</script>
+
+    <!--<script type="text/javascript" src="JavaScript.js">
+        
+    </script>-->
+    <title>GARS</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel ="stylesheet" href="estilo.css">
+    <link rel ="stylesheet" href="estilo1.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<!---->
+   
+    <div class="navbar-wrapper">
+        <div class="container">
+  
+          <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="GARS.html">GARS</a>
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                
+                  <li><a href="contactos.html">Contactos</a></li>
+                
+                 <li class="dropdown">
+                    <a href="/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">arquivos <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="Galeria.html">GALERIA</a></li>
+                      <li><a href="#">ACÇÃO 1</a></li>
+                      <li><a href="#">ACÇÃO 1</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">ACÇÃO NOVA</li>
+                      <li><a href="#">ACÇÃO 1</a></li>
+                      <li><a href="/#">ACÇÃO 1</a></li>
+                    </ul>
+                  </li>
+            
+                </ul>
+              </div>
+            </div>
+          </nav>
+  
+        </div>
+    </div>
+
+         <hr class="featurette-divider">
+          <div class="jumbotron">
+           <div class="container">
+            <h1 class="texto-usuario">INFORMAÇÕES</h1>
+
+            <p>Somos uma empresa líder em Angola na área de telecomunicações e técnologia de da informação.
+              Nosso objectivo é fornecer cerviços de alta qualidade e soluções inovadoras para nossos clientes,
+              ajudando-os a gerenciar, administrar e garantita segurança de sua rede de computadores.
+            </p>
+            <p><a class="btn btn-primary btn-lg" href="GARS.html" role="button">« Voltar</a></p>
+          </div>
+        </div>
+        <hr class="featurette-divider"><hr>
+         <h3 class="texto-usuario">Sobre Nós</h3>
+        <div class="container">
+        <div class="bs-example" data-example-id="media-alignment">
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="imagens/hub-de-rede.png" data-holder-rendered="true" style="width: 64px; height: 64px;">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Administração de Sistema</h4>
+        <p>Administração de Sistema, a Empresa também oferece soluções de administração de sistema, Cuidando da manuntenção, atualização e segurança dos sistemas operacionais e softwares de utilizados pelas redes.</p>
+        <p>A administração de sistema é essecial para garantir a eficiência e segurança dos processos tecnologicos de uma empresa, permitindo o pleno funcionamento.</p>
+      </div>
+    </div>
+
+    <div class="media">
+      <div class="media-left media-middle">
+        <a href="#">
+          <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="imagens/conexao-de-internet (1).png" data-holder-rendered="true" style="width: 64px; height: 64px;">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Segurança da Informação</h4>
+        <p>A segurança sa informação é essencial para proteger dados sensiveis e garantir a confidencialidade, integridade e disponibilidade das informações em um mundo cada vez mais</p>
+        <p>.</p>
+      </div>
+    </div>
+    <div class="media">
+      <div class="media-left media-bottom">
+        <a href="#">
+          <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="imagens/cursor.png" data-holder-rendered="true" style="width: 64px; height: 64px;">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Conectar em Segurança</h4>
+        <p>...</p>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+         <!-- 
+          <div class="col-md-6">
+            <div class="Galeria1">
+            <img src="imagens/conexao-de-internet (1).png" class="img-thumbnail" width="200px" height="200px">
+            <h3>Administração de Sistema, a Empresa também oferece soluções de administração de sistema.</h3>
+            <h4>Administração de Sistemas é essencial para garantir a eficiência e segurança dos processos tecnologicos de uma empresa, permitindo o pleno funcionamento e evolução.</h4>
+             </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="Galeria1">
+            <img src="imagens/conexao-de-internet (1).png" class="img-thumbnail" width="200px" height="200px">
+            <h3>Administração de Sistema, a Empresa também oferece soluções de administração de sistema.</h3>
+            <h4>Administração de Sistemas é essencial para garantir a eficiência e segurança dos processos tecnologicos de uma empresa, permitindo o pleno funcionamento e evolução.</h4>
+             </div>
+          </div>
+        </div>
+           /END THE FEATURETTES -->
+       <hr class="featurette-divider">
+      <!-- /END THE FEATURETTES -->
+        <div class="container">
+           <div class="" data-example-id="simple-thumbnails">
+    <div class="row">
+       <h3 class="texto-usuario">Nossos Serviços</h3>
+      <div class="col-xs-6 col-md-3 ">
+        <a href="#" class="thumbnail">
+          <img class="" data-src="holder.js/100%x180" alt="100%x180" src="imagens/istockphoto-1350595566-1024x1024.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img data-src="holder.js/100%x180" alt="100%x180" src="imagens/istockphoto-1422766384-1024x1024.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img data-src="holder.js/100%x180" alt="100%x180" src="imagens/2f204ba8eaedf419ab53604e31fe39d5.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;" >
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img data-src="holder.js/100%x180" alt="100%x180" src="imagens/d8580c41eb96a09b1e23047a1187fc71.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+        </a>
+      </div>
+         <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img data-src="holder.js/100%x180" alt="100%x180" src="imagens/data-center.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;" >
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img data-src="holder.js/100%x180" alt="100%x180" src="imagens/interção.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+        </a>
+      </div>
+         <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img data-src="holder.js/100%x180" alt="100%x180" src="imagens/1e22715732b18163c0291df805fad139.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;" >
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img data-src="holder.js/100%x180" alt="100%x180" src="imagens/ad23b7bc883d6f89b193a17ae74d1252.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <h3 class="texto-usuario">Localização</h3>
+    <div class="col-xs-6">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.8358131891428!2d13.189321074140041!3d-8.894852391246259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f4c3f70f2803%3A0x4204168de494eed3!2sAv.%2021%20de%20Janeiro%2C%20Luanda!5e0!3m2!1spt-PT!2sao!4v1705392572935!5m2!1spt-PT!2sao" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+</div>
+<div class="container">
+      <div class="row">
+           <h3 class="texto-usuario">Nossa Equipa de Trabalho</h3>
+        <div class=" col-xs-6 col-md-3">
+            <img src="imagens/user-interface.png" class="img-circle" style="height: 200px; width: 100%; display: block; padding: 10px;">
+            <h4 class="texto-usuario">Dos Reis Ferreis</h4>
+            <p>Administrador de sistema. </p>
+        </div>
+        <div class=" col-xs-6 col-md-3">
+            <img src="imagens/engenheiro.png" class="img-circle" style="height: 200px; width: 100%; display: block; padding: 10px;">
+            <h4 class="texto-usuario">José Francisco</h4>
+            <p>Técnico de Informática. </p>
+        </div>
+        <div class=" col-xs-6 col-md-3">
+            <img src="imagens/user-interface.png" class="img-circle" style="height: 200px; width: 100%; display: block; padding: 10px;">
+            <h4 class="texto-usuario">Candungo dos Santos</h4>
+            <p>Gestor de Redes. </p>
+        </div>
+        <div class=" col-xs-6 col-md-3">
+            <img src="imagens/engenheiro.png" class="img-circle" style="height: 200px; width: 100%; display: block; padding: 10px;">
+            <h4 class="texto-usuario">António Basto</h4>
+            <p class="descrição">Especialista em Segurança em Redes. </p>
+        </div>
+      </div>
+</div>
+
+
+      <!-- FOOTER -->
+      <footer id="footer" class="footer navbar-wrapper">
+        <div class="col-md-4 link">
+          <p><a class="link" href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook.png"></a></p>
+          <p><a class="link" href="https://www.instagram.com//" target="_blank"><img src="imagens/instagram.png"></a></p>
+          <p><a class="link" href="https://www.whatsapp.com/download?lang=pt_br/" target="_blank"><img src="imagens/whatsapp.png"></a></p>
+          <p><a class="link" href="https://www.youtube.com/" target="_blank"><img src="imagens/youtube.png"></a></p>
+          <p><a class="link" href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&ifkv=ASKXGp3FxBO7VfPKdypuFZkes-1yjIeSFwkdpPHrIw_lGiFTJllbYsxcYwnWUifquvp2WM21bp4arw&theme=glif&flowName=GlifWebSignIn&flowEntry=ServiceLogin#inbox" target="_blank"><img src="imagens/gmail.png"></a></p>
+        </div>
+        <p class="pull-right home"><a class="link" href="GARS.html"><img src="imagens/casa.png"></a></p>
+          <p>© 2024 GARS, Lda. · <a href="https://getbootstrap.com/docs/3.4/examples/carousel/#">Termos e</a> · 
+          <a href="https://getbootstrap.com/docs/3.4/examples/carousel/#">Privacidade</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="JavaScript.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>
